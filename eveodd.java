@@ -15,7 +15,7 @@ public class eveodd{
 
         Scanner in = new Scanner(System.in);
 
-        System.out.print("Hii Sahil....");
+        System.out.println("Hii Sahil....");
 
         System.out.print("Enter the Number : ");
 
