@@ -18,8 +18,12 @@ public class Calculator {
             if (op == '+' || op == '-' || op == '*' ||
                 op == '/' || op == '%') {
 
-                System.out.print("Enter two numbers: ");
+                System.out.println("<---My Calculator--->");
+
+                System.out.print("Enter the number-1: ");
                 int num1 = sc.nextInt();
+
+                System.out.print("Enter the number-2: ");
                 int num2 = sc.nextInt();
 
                 int ans = 0;
