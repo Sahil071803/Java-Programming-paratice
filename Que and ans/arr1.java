@@ -4,8 +4,6 @@
 
 //     public static void main(String[] args){
 
-
-
 //         Scanner in  = new Scanner(System.in);
 
 //         System.out.println("Enter the 5 Numbers :");
@@ -18,9 +16,6 @@
 
 //           arr[i] = in.nextInt();
 
-         
-
-            
 //         }
 
 //         for(int i = 0; i < arr.length; i++){
@@ -31,16 +26,11 @@
 
 //         System.out.println("Hello Sahil");
 
-
-
-
 //         in.close();
 
 //     }
-    
+
 // }
-
-
 
 // Q2. Find the sum of all array elements.
 
@@ -57,7 +47,6 @@
 //         int[] arrSum = new int[5];
 
 //         for(int i = 0; i < arrSum.length; i++){
-
 
 //             System.out.print("The Index  " +  i + "  is  = " + " ");
 
@@ -81,21 +70,14 @@
 
 //             sum = sum + arrSum[i];
 
-            
 //         }
-
 
 //         System.out.println("Total array sum = "  + sum );
 
-        
 //     }
 // }
 
-
-
-
 // Q3. Find the largest number.
-
 
 // import java.util.Scanner;
 
@@ -150,55 +132,105 @@
 //     }
 // }
 
-
-
 // Q4. Find the smallest number.
 
 // Ans : - 
 
+// import java.util.Scanner;
+
+// public class arr1{
+
+//     public static void main(String[] args){
+
+//         Scanner in = new Scanner(System.in);
+
+//         System.out.println("Enter the 5 numbers : ");
+
+//         int[] arrMin = new int[5];
+
+//         for(int i = 0; i < arrMin.length; i++){
+
+//             System.out.print("The Index  " +  i + "  is  = " + " ");
+
+//             arrMin[i] = in.nextInt();
+//         }
+
+//         System.out.println("<----------------->");
+
+//         System.out.println("The array 5 num is :");
+
+//         for(int i = 0; i < arrMin.length; i++){
+
+//             System.out.println(arrMin[i] + " ");
+//         }
+
+//          System.out.println("<----------------->");
+//          int min = arrMin[0];
+
+//          for (int j = 1; j < arrMin.length; j++) {
+
+//                if (arrMin[j] < min) {
+//                min = arrMin[j];
+//             }
+//         }
+
+//         System.out.println("The minimum number is: " + min);
+
+//        in.close();      
+
+//     }
+// }
+
+// Q5. Count how many numbers are even and odd.
+
+// ans : = 
+
 import java.util.Scanner;
 
-public class arr1{
+public class arr1 {
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
         Scanner in = new Scanner(System.in);
 
         System.out.println("Enter the 5 numbers : ");
 
-        int[] arrMin = new int[5];
+        int[] arr = new int[5];
 
+        for (int i = 0; i < arr.length; i++) {
 
-        for(int i = 0; i < arrMin.length; i++){
+            System.out.print("The Index  " + i + "  is  = " + " ");
 
-            System.out.print("The Index  " +  i + "  is  = " + " ");
-
-            arrMin[i] = in.nextInt();
+            arr[i] = in.nextInt();
         }
 
         System.out.println("<----------------->");
 
         System.out.println("The array 5 num is :");
 
-        for(int i = 0; i < arrMin.length; i++){
+        for (int i = 0; i < arr.length; i++) {
 
-            System.out.println(arrMin[i] + " ");
+            System.out.println(arr[i] + " ");
         }
 
+        System.out.println("<----------------->");
+        int evenCount = 0;
+        int oddCount = 0;
 
-         System.out.println("<----------------->");
-         int min = arrMin[0];
+        for (int j = 0; j < arr.length; j++) {
 
-         for (int j = 1; j < arrMin.length; j++) {
-
-               if (arrMin[j] < min) {
-               min = arrMin[j];
+            if (arr[j] % 2 == 0) {
+                evenCount++;
+            } else {
+                oddCount++;
             }
         }
 
-        System.out.println("The minimum number is: " + min);
+        System.out.println("Total even numbers: " + evenCount);
+        System.out.println("Total odd numbers: " + oddCount);
+        // System.out.println("The minimum number is: " + min);
 
-       in.close();      
+        in.close();
 
     }
 }
